@@ -1,0 +1,70 @@
+#+STARTUP: overwiev
+* interface tweaks
+#+BEGIN_SRC emacs-lisp
+
+;; menu tool bar
+(setq inhibit-startup-message t)
+(setq indo-enable-flex-matching t)
+(setq ido-everywhere t)
+(menu-bar-mode 1)
+(tool-bar-mode 0)
+(ido-mode 1)
+
+(defalias 'list-buffers 'ibuffer)
+
+#+END_SRC
+
+#+RESULTS:
+: list-buffers
+
+* package try
+#+BEGIN_SRC emacs-lisp
+(use-package try
+  :ensure t)
+#+END_SRC
+* which key
+#+BEGIN_SRC emacs-lisp
+(use-package which-key
+  :ensure t
+  :config (which-key-mode))
+#+END_SRC
+
+* org-mode 
+#+BEGIN_SRC emacs-lisp
+
+;; Org-mode stufff
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+#+END_SRC
+
+#+RESULTS:
+: t
+
+* theme
+#+BEGIN_SRC emacs-lisp
+;; theme stuff
+(use-package sublime-themes
+  :ensure t)
+
+(load-theme 'graham t)
+;;spolsky
+;;wilson
+#+END_SRC
+
+#+RESULTS:
+: t
+
+* dired
+#+BEGIN_SRC elisp
+  (use-package wgrep
+     :ensure t
+     )
+
+#+END_SRC
+
+#+RESULTS:
+: t
+
