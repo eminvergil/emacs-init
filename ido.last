@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/emin/Documents/emacs/.emacs.d/" . "auto-save-list/")
+ ("c:/Users/emin/Documents/" . "emacs/")
+ ("c:/Users/emin/Documents/emacs/" . ".emacs.d/")
  ("c:/Users/emin/Desktop/" . "org/")
  ("c:/Users/emin/" . "Desktop/")
 )
@@ -10,30 +13,40 @@
 (
  "c:/Users/emin/Documents/emacs/.emacs.d/"
  "c:/Users/emin/Desktop/org/"
+ "c:/Users/emin/Desktop/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "myinit.org"
- "myinit.el"
- "init.el"
- "init.org"
+ "home.org"
+ "sınav.org"
+ "code.org"
+ "music.org"
+ "habits.orgcode.org"
+ "gunluk.org"
+ "stuff.org"
+ "writing.org"
  "weekly.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/emin/Documents/emacs/.emacs.d/" (23871 7227 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "auto-save-list/" ".git/" "../" "./")
+ ("c:/Users/emin/Documents/emacs/.emacs.d/auto-save-list/" (23872 27411 0 0) ".saves-8780-DESKTOP-4VL94D8~" ".saves-4760-DESKTOP-4VL94D8~" ".saves-1032-DESKTOP-4VL94D8~" "../" "./")
 
- ("c:/Users/emin/Desktop/org/" (23871 2096 0 0) "writing.org" "weekly.org" "todo.org~" "todo.org" "stuff.org" "../" "./")
+ ("c:/Users/emin/Documents/emacs/.emacs.d/" (23872 27368 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "bookmarks" "auto-save-list/" ".git/" "../" "./")
 
- ("c:/Users/emin/Desktop/" (23871 69 0 0) "yazıcı/" "Visual Studio Code.lnk" "uTorrent Web.lnk" "tidal/" "This War of Mine Stories - Fathers Promise.lnk" "The_Timeless_Way_of_Building_Complete.pdf" "sketchs/" "samples/" "projeler/" "Postman.lnk" "org/" "OpenMPT.lnk" "ogutler.pdf" "notlar/" "musics/" "Microsoft Edge.lnk" "Internet Download Manager.lnk" "games/" "FL Studio 12.lnk" "FL Studio 12 (64bit).lnk" "Empires2.lnk" "Dropbox.lnk" "docslide.net_christopher-alexander-christopher-alexander-the-oregon-experiment-1975.pdf" "docslide.net_a-pattern-language-pdf.pdf" "desktop.ini" "blender.lnk" "blender - Kısayol.lnk" "AOCCONFIG.lnk" "Age2.lnk" "../" "./")
+ ("c:/Users/emin/Desktop/org/" (23872 23807 0 0) "writing.org~" "writing.org" "weekly.org~" "weekly.org" "sınav.org~" "sınav.org" "stuff.org" "music.org~" "music.org" "habits.org~" "habits.org" "gunluk.org~" "gunluk.org" "code.org~" "code.org" ".#music.org" "../" "./")
 
- ("c:/Users/emin/" (23868 8174 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SimpleImageGallery_log.ldf" "SimpleImageGallery.mdf" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Postman/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "def.scd" "Cookies/" "ContosoUniversity1_log.ldf" "ContosoUniversity1.mdf" "Contacts/" "Belgelerim/" "Application Data/" "AppData/" "3D Objects/" ".vscode/" ".thumbnails/" ".templateengine/" ".pgAdmin4.startup.log" ".pgAdmin4.1590372639.log" ".pgAdmin4.1590372639.addr" ".omnisharp/" ".nuget/" ".librarymanager/" ".dotnet/" ".dbus-keyrings/" ".config/" ".cache/" ".angular-config.json" ".android/" "../" "./")
+ ("c:/Users/emin/Documents/emacs/" (23872 7651 0 0) "var/" "share/" "pdf-tools/" "pacman.exe.stackdump" "libexec/" "bin/" ".ssh/" ".notes" ".gnupg/" ".gitconfig" ".emacs.d/" ".bash_history" "../" "./")
+
+ ("c:/Users/emin/" (23871 28842 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SimpleImageGallery_log.ldf" "SimpleImageGallery.mdf" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Postman/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{d5a2400a-8ed1-11e9-bc61-eca86b23c683}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "def.scd" "Cookies/" "ContosoUniversity1_log.ldf" "ContosoUniversity1.mdf" "Contacts/" "Belgelerim/" "Application Data/" "AppData/" "3D Objects/" ".vscode/" ".thumbnails/" ".templateengine/" ".pgAdmin4.startup.log" ".pgAdmin4.1590372639.log" ".pgAdmin4.1590372639.addr" ".omnisharp/" ".nuget/" ".librarymanager/" ".dotnet/" ".dbus-keyrings/" ".config/" ".cache/" ".angular-config.json" ".android/" "../" "./")
+
+ ("c:/Users/emin/Desktop/" (23871 9976 0 0) "yazıcı/" "Visual Studio Code.lnk" "uTorrent Web.lnk" "tidal/" "This War of Mine Stories - Fathers Promise.lnk" "The_Timeless_Way_of_Building_Complete.pdf" "sketchs/" "samples/" "projeler/" "Postman.lnk" "org/" "OpenMPT.lnk" "ogutler.pdf" "notlar/" "musics/" "MSYS.lnk" "MinGW Installer.lnk" "Microsoft Edge.lnk" "Internet Download Manager.lnk" "games/" "FL Studio 12.lnk" "FL Studio 12 (64bit).lnk" "Empires2.lnk" "Dropbox.lnk" "docslide.net_christopher-alexander-christopher-alexander-the-oregon-experiment-1975.pdf" "docslide.net_a-pattern-language-pdf.pdf" "desktop.ini" "blender.lnk" "blender - Kısayol.lnk" "AOCCONFIG.lnk" "Age2.lnk" "../" "./")
+
+ ("c:/Users/emin/Documents/emacs/bin/" (22968 5424 0 0) "zlib1.dll" "runemacs.exe" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libtasn1-6.dll" "libstdc++-6.dll" "librsvg-2-2.dll" "libpng16-16.dll" "libpixman-1-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-6.dll" "liblzma-5.dll" "libjpeg-8.dll" "libjbig-0.dll" "libintl-8.dll" "libidn2-0.dll" "libidn-11.dll" "libiconv-2.dll" "libhogweed-4.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_seh-1.dll" "libfreetype-6.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libcroco-0.6-3.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-25.3.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
 
  ("c:/Users/emin/Documents/" (23859 22808 0 0) "Visual Studio 2019/" "Videolarım/" "Ses kayıtları/" "Resimlerim/" "Rack/" "ORG/" "Orca/" "Müziğim/" "My Web Sites/" "mtpdk.mid" "Image-Line/" "IISExpress/" "Helm/" "faereld/" "emacs/" "desktop.ini" "cmder/" "Blender/" "Audacity/" "Ample Sound/" "../" "./")
-
- ("c:/Users/emin/Documents/emacs/" (23871 2490 0 0) "var/" "share/" "libexec/" "bin/" ".ssh/" ".gnupg/" ".gitconfig" ".emacs.d/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
