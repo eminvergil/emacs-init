@@ -25,15 +25,6 @@
  ;;                           "~/org/school.org" 
                              ;;"~/org/home.org"
 			     ))
-(setq org-agenda-custom-commands
-      '(("h" "Daily habits" 
-         ((agenda ""))
-         ((org-agenda-show-log t)
-          (org-agenda-ndays 7)
-          (org-agenda-log-mode-items '(state))
-          (org-agenda-skip-function '(org-agenda-skip-entry-if 'notregexp ":HABITS:"))))
-        ;; other commands here
-        ))
 
 ;; Enable org-habit
  (add-to-list 'org-modules 'org-habit)
@@ -52,22 +43,7 @@
 (use-package org
     :ensure t
     :pin org)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;ikinci bu
-;;(use-package org
-;;  :config
-;;   (add-to-list 'org-speed-commands-user '("N" org-narrow-to-subtree))
-;;   (add-to-list 'org-speed-commands-user '("W" widen))
-;;   (add-to-list 'org-speed-commands-user '("T" my/org-agenda-for-subtree))
-;;   (add-to-list 'org-speed-commands-user '("b" my/org-bounce-to-inbox)))
-;;
-;;   (defun my/org-agenda-for-subtree ()
-;;     (interactive)
-;;     (when (derived-mode-p 'org-agenda-mode) (org-agenda-switch-to))
-;;     (my/org-with-current-task
-;;      (let ((org-agenda-view-columns-initially t))
-;;        (org-agenda nil "t" 'subtree))))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (use-package org-protocol
     :ensure nil)
 
@@ -132,8 +108,8 @@
                      "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
 
-  ("w" "Hikaye yazi" entry (file+datetree ,(concat org-directory "writing.org") "HIKAYE")
-               "* %?" empty-line 1 :clock-in t :clock-resume t)
+  ("w" "Hikaye yazi" entry (file+headline ,(concat org-directory "writing.org") "HIKAYE")
+               "* %?:tag:" empty-line 1 :clock-in t :clock-resume t)
 
   
   ("f" "Some stuff" entry (file ,(concat org-directory "stuff.org"))
@@ -229,6 +205,11 @@
 (add-to-list 'display-buffer-alist
              `(,(rx string-start "*Calendar*" string-end)
                (display-buffer-below-selected)))
+
+(setq org-habit-graph-column 40)
+(setq org-habit-show-habits-only-for-today t)
+(setq org-agenda-view-columns-initially nil)
+(setq org-agenda-window-setup 'current-window)
 
 ;; theme stuff
 (use-package sublime-themes
