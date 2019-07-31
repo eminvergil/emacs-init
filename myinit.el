@@ -48,10 +48,26 @@
 (use-package htmlize
   :ensure t)
 
+;;ilki bu
 (use-package org
     :ensure t
     :pin org)
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;ikinci bu
+;;(use-package org
+;;  :config
+;;   (add-to-list 'org-speed-commands-user '("N" org-narrow-to-subtree))
+;;   (add-to-list 'org-speed-commands-user '("W" widen))
+;;   (add-to-list 'org-speed-commands-user '("T" my/org-agenda-for-subtree))
+;;   (add-to-list 'org-speed-commands-user '("b" my/org-bounce-to-inbox)))
+;;
+;;   (defun my/org-agenda-for-subtree ()
+;;     (interactive)
+;;     (when (derived-mode-p 'org-agenda-mode) (org-agenda-switch-to))
+;;     (my/org-with-current-task
+;;      (let ((org-agenda-view-columns-initially t))
+;;        (org-agenda nil "t" 'subtree))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package org-protocol
     :ensure nil)
 
@@ -101,7 +117,7 @@
 (setq org-capture-templates `(
 
   ("c" "Code Tasks" entry (file+headline ,(concat org-directory "code.org") "Code")
-                     "* TODO %?\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
+                     "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
   
   
   ("t" "Home Tasks" entry (file+headline ,(concat org-directory "home.org") "Home")
@@ -110,10 +126,10 @@
   
 
   ("m" "Music Tasks" entry (file+headline ,(concat org-directory "music.org") "Music")
-                     "* TODO %?\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
+                     "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
   ("s" "Sınav Tasks" entry (file+headline ,(concat org-directory "sınav.org") "Sınav")
-                     "* TODO %?\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
+                     "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
 
   ("w" "Hikaye yazi" entry (file+datetree ,(concat org-directory "writing.org") "HIKAYE")
@@ -132,21 +148,6 @@
 
    ))
 
-;; theme stuff
-(use-package sublime-themes
-  :ensure t)
-
-(load-theme 'spolsky t)
-;;spolsky
-;;wilson
-;;graham
-
-(use-package pdf-tools
-:ensure t)
-
-(use-package org-pdfview
-:ensure t)
-
 ; Make babel results blocks lowercase
 (setq org-babel-results-keyword "results")
 
@@ -164,3 +165,82 @@
 	 (ditaa . t)
          (org . t)
          (latex . t))))
+
+;; Set default column view headings: Task Total-Time Time-Stamp
+(setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
+;; bunu ayarladıktan sonra
+;; cc cx cc yaparak butun harcanan sureler olculebilir
+;; tabi basta
+;; cc cx ci
+;; cc cx co
+;; ile sure tuttuktan sonrau bu ustteki tablo halinde gormemizi saglio.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	("p" "List Non-done projects"
+;;          tags "+PROJECT+TODO=\"TODO\"")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq org-agenda-skip-scheduled-if-done nil)
+
+(setq org-agenda-custom-commands
+      '(
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	("q" agenda "habits and todos"
+	 ((org-agenda-span 1)
+	  (org-agenda-skip-scheduled-if-done t)
+	  (org-scheduled-past-days 0)
+	  (org-deadline-warnings 0))
+	 tags("+HABITS+TODO=\"TODO\""))
+	  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;	("z" "List Non-done projects"
+;;	 ((agenda "" ((org-agenda-span 1)
+;;		      (org-habit-toggle-habits)
+;;		      (org-scheduled-past-days 0)))
+;;        tags "+HABITS+TODO=\"TODO\""))
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	("p" agenda "ONLY HABITS"
+	 ((org-agenda-ndays 1)
+	  (org-scheduled-past-days 0)
+	  (org-deadline-warnings 0)
+	  (org-agenda-filter-preset '("+HABITS"))
+	  ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	("W" "Weekly Review"
+         ((agenda "" ((org-agenda-span 7))); review upcoming deadlines and appointments
+                                           ; type "l" in the agenda to review logged items 
+          (todo "SOMEDAY")
+	  (todo "PROGRESS")
+	  (todo "CANCELLED") ; review all projects (assuming you use todo keywords to designate projects)
+          (todo "DONE") ; review someday/maybe items
+          (todo "WAITING"))) ; review waiting items
+	))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun air-pop-to-org-agenda (split)
+  "Visit the org agenda, in the current window or a SPLIT."
+  (interactive "P")
+  (org-agenda-list)
+  (when (not split)
+    (delete-other-windows)))
+
+(define-key global-map (kbd "C-c t a") 'air-pop-to-org-agenda)
+
+(add-to-list 'display-buffer-alist
+             `(,(rx string-start "*Calendar*" string-end)
+               (display-buffer-below-selected)))
+
+;; theme stuff
+(use-package sublime-themes
+  :ensure t)
+
+(load-theme 'spolsky t)
+;;spolsky
+;;wilson
+;;graham
+
+;;    (use-package auctex
+;;      :ensure t)
+;;  
+;;  (use-package tex
+;;      :ensure auctex)

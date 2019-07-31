@@ -34,7 +34,7 @@
     (org-bbdb org-bibtex org-docview org-eww org-gnus org-habit org-info org-irc org-mhe org-rmail org-w3m)))
  '(package-selected-packages
    (quote
-    (htmlize org-pdfview pdf-tools wgrep dired+ which-key use-package try sublime-themes org-bullets))))
+    (org-pdfview pdf-tools auctex htmlize wgrep dired+ which-key use-package try sublime-themes org-bullets))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
