@@ -19,11 +19,11 @@
 ;; ----- ido-work-file-list -----
 (
  "myinit.org"
- "writing.org"
  "gunluk.org"
+ "stuff.org"
+ "writing.org"
  "ogutler.pdf"
  "weekly.org"
- "stuff.org"
  "home.org"
  "sınav.org"
  "code.org"
@@ -32,11 +32,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/emin/Documents/emacs/.emacs.d/" (23873 56625 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "bookmarks" "auto-save-list/" ".git/" ".#myinit.org" "#myinit.org#" "../" "./")
+ ("c:/Users/emin/Documents/emacs/.emacs.d/" (23874 34891 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "bookmarks" "auto-save-list/" ".git/" "../" "./")
 
- ("c:/Users/emin/Desktop/org/" (23873 52769 0 0) "writing.org~" "writing.org" "weekly.org~" "weekly.org" "sınav.org~" "sınav.org" "stuff.org~" "stuff.org" "music.org~" "music.org" "home.org~" "home.org" "habits.org~" "habits.org" "gunluk.org~" "gunluk.org" "code.org~" "code.org" ".git/" ".#habits.org" ".#code.org" "#habits.org#" "#code.org#" "../" "./")
+ ("c:/Users/emin/Desktop/org/" (23874 34760 0 0) "writing.org~" "writing.org" "weekly.org~" "weekly.org" "sınav.org~" "sınav.org" "stuff.org~" "stuff.org" "music.org~" "music.org" "home.org~" "home.org" "habits.org~" "habits.org" "gunluk.org~" "gunluk.org" "code.org~" "code.org" ".git/" "../" "./")
 
- ("c:/Users/emin/Documents/emacs/" (23873 52133 0 0) "var/" "share/" "libexec/" "bin/" ".ssh/" ".emacs.d/" "../" "./")
+ ("c:/Users/emin/Documents/emacs/" (23873 57127 0 0) "var/" "share/" "libexec/" "bin/" ".ssh/" ".gitconfig" ".emacs.d/" "../" "./")
 
  ("c:/Users/emin/Documents/emacs/.emacs.d/auto-save-list/" (23872 32229 0 0) ".saves-8780-DESKTOP-4VL94D8~" ".saves-72-DESKTOP-4VL94D8~" ".saves-1032-DESKTOP-4VL94D8~" "../" "./")
 
