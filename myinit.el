@@ -97,7 +97,7 @@
   
   
   ("t" "Home Tasks" entry (file+headline ,(concat org-directory "home.org") "Home")
-                     "* TODO %?\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
+                     "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
   
 
@@ -162,7 +162,7 @@
 	("q" agenda "habits and todos"
 	 ((org-agenda-span 1)
 	  (org-agenda-skip-scheduled-if-done t)
-	  (org-scheduled-past-days 0)
+	  (org-scheduled-past-days 1)
 	  (org-deadline-warnings 0))
 	 tags("+HABITS+TODO=\"TODO\""))
 	  
@@ -206,7 +206,7 @@
              `(,(rx string-start "*Calendar*" string-end)
                (display-buffer-below-selected)))
 
-(setq org-habit-graph-column 40)
+(setq org-habit-graph-column 80)
 (setq org-habit-show-habits-only-for-today t)
 (setq org-agenda-view-columns-initially nil)
 (setq org-agenda-window-setup 'current-window)
