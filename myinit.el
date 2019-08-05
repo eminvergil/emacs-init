@@ -21,7 +21,7 @@
 			     "c:/Users/emin/Desktop/org/code.org"
 			     "c:/Users/emin/Desktop/org/music.org" 
 			     "c:/Users/emin/Desktop/org/home.org" 
-			     "c:/Users/emin/Desktop/org/sınav.org"  
+			     "c:/Users/emin/Desktop/org/sinav.org"  
  ;;                           "~/org/school.org" 
                              ;;"~/org/home.org"
 			     ))
@@ -90,6 +90,8 @@
 
 (setq org-directory (expand-file-name "c:/Users/emin/Desktop/org/" ))
 
+;;"c:/Users/emin/Desktop/notlar/yazi"
+
 (setq org-capture-templates `(
 
   ("c" "Code Tasks" entry (file+headline ,(concat org-directory "code.org") "Code")
@@ -104,11 +106,11 @@
   ("m" "Music Tasks" entry (file+headline ,(concat org-directory "music.org") "Music")
                      "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
-  ("s" "Sınav Tasks" entry (file+headline ,(concat org-directory "sınav.org") "Sınav")
+  ("s" "Sınav Tasks" entry (file+headline ,(concat org-directory "sinav.org") "Sınav")
                      "* TODO %?:tag:\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a>>\")\n%U\n%a\n" :clock-in t :clock-resume t)
 
 
-  ("w" "Hikaye yazi" entry (file+headline ,(concat org-directory "writing.org") "HIKAYE")
+  ("w" "Hikaye yazi" entry (file+headline ,(concat "" "c:/Users/emin/Desktop/notlar/yazi/writing.org") "HIKAYE")
                "* %?:tag:" empty-line 1 :clock-in t :clock-resume t)
 
   
@@ -116,7 +118,10 @@
                "* %?" empty-line 1 )
 
 
-  ("g" "Journal entry" entry (file+datetree ,(concat org-directory "gunluk.org") "Gunluk")
+  ("g" "Journal entry" entry (file+datetree ,(concat "" "c:/Users/emin/Desktop/notlar/yazi/gunluk.org") "Gunluk")
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+
+  ("r" "Weekly entry" entry (file+datetree ,(concat "" "c:/Users/emin/Desktop/notlar/yazi/weekly.org") "Haftalik")
                "* %?\n%U\n" :clock-in t :clock-resume t)
   
   ("h" "Habit " entry (file+headline ,(concat org-directory "habits.org") "Habits")
@@ -162,7 +167,7 @@
 	("q" agenda "habits and todos"
 	 ((org-agenda-span 1)
 	  (org-agenda-skip-scheduled-if-done t)
-	  (org-scheduled-past-days 1)
+	  (org-scheduled-past-days 0)
 	  (org-deadline-warnings 0))
 	 tags("+HABITS+TODO=\"TODO\""))
 	  
