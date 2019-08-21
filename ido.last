@@ -7,26 +7,26 @@
  ("c:/Users/emin/Documents/" . "emacs/")
  ("c:/Users/emin/Documents/emacs/" . ".emacs.d/")
  ("c:/Users/emin/Desktop/" . "notlar/")
- ("c:/Users/emin/" . "Documents/")
+ ("c:/Users/emin/" . "Desktop/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/emin/Documents/emacs/.emacs.d/"
- "c:/Users/emin/Desktop/org/"
  "c:/Users/emin/Desktop/notlar/yazi/"
+ "c:/Users/emin/Desktop/org/"
+ "c:/Users/emin/Documents/emacs/.emacs.d/"
  "c:/Users/emin/Desktop/notlar/not/"
  "c:/Users/emin/Desktop/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "myinit.org"
+ "weekly.org"
  "stuff.org"
  "writing.org"
+ "myinit.org"
  "gunluk.org"
  "ogutler.pdf"
- "weekly.org"
  "home.org"
  "sınav.org"
  "code.org"
@@ -35,23 +35,23 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/emin/Documents/emacs/.emacs.d/" (23880 33539 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "bookmarks" "auto-save-list/" ".git/" "../" "./")
+ ("c:/Users/emin/Desktop/notlar/yazi/" (23894 41749 0 0) "writing.org~" "writing.org" "weekly.org~" "weekly.org" "gunluk.org~" "gunluk.org" "../" "./")
 
- ("c:/Users/emin/Desktop/org/" (23879 8676 0 0) "stuff.org~" "stuff.org" "sinav.org~" "sinav.org" "music.org~" "music.org" "home.org~" "home.org" "habits.org~" "habits.org" "code.org~" "code.org" ".git/" "../" "./")
+ ("c:/Users/emin/" (23884 9149 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "lmms/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Belgelerim/" "Application Data/" "AppData/" "3D Objects/" ".vscode/" ".templateengine/" ".sqltools-setup" ".omnisharp/" ".nuget/" ".netlify/" ".lmmsrc.xml" ".gitconfig" ".dotnet/" ".dbus-keyrings/" ".config/" ".cache/" ".angular-config.json" "../" "./")
+
+ ("c:/Users/emin/Documents/" (23893 29089 0 0) "WindowsPowerShell/" "Visual Studio 2019/" "Videolarım/" "Resimlerim/" "Rack/" "ORG/" "Müziğim/" "My Web Sites/" "Image-Line/" "IISExpress/" "Helm/" "emacs/" "desktop.ini" "cmder_mini/" "Audacity/" "../" "./")
+
+ ("c:/Users/emin/Desktop/org/" (23894 40083 0 0) "stuff.org~" "stuff.org" "sinav.org~" "sinav.org" "music.org~" "music.org" "home.org~" "home.org" "habits.org~" "habits.org" "code.org~" "code.org" ".git/" ".#habits.org" "#habits.org#" "../" "./")
+
+ ("c:/Users/emin/Desktop/" (23893 29088 0 0) "Visual Studio Code.lnk" "samples/" "rt/" "projects/" "p5-sketches/" "org/" "Orca/" "OpenMPT.lnk" "nysic/" "notlar/" "Microsoft Edge.lnk" "Dropbox.lnk" "dotnet/" "desktop.ini" "assets/" "ALL/" "../" "./")
+
+ ("c:/Users/emin/Documents/emacs/.emacs.d/" (23881 20563 0 0) "myinit.org~" "myinit.org" "myinit.el" "init.el~" "init.el" "ido.last~" "ido.last" "elpa/" "bookmarks" "auto-save-list/" ".git/" "../" "./")
 
  ("c:/Users/emin/Documents/emacs/" (23878 56194 0 0) "var/" "share/" "libexec/" "bin/" ".viminfo" ".ssh/" ".sqltools-setup" ".gitconfig" ".emacs.d/" ".bash_history" "../" "./")
-
- ("c:/Users/emin/Desktop/notlar/yazi/" (23876 35887 0 0) "writing.org~" "writing.org" "weekly.org~" "weekly.org" "gunluk.org~" "gunluk.org" "../" "./")
 
  ("c:/Users/emin/Desktop/notlar/not/" (23874 63320 0 0) "writing.org~" "writing.org" "../" "./")
 
  ("c:/Users/emin/Desktop/notlar/" (23874 62274 0 0) "yazi/" "not/" "../" "./")
-
- ("c:/Users/emin/Desktop/" (23874 62119 0 0) "Visual Studio Code.lnk" "unpnp.exe" "samples/" "rt/" "p5-sketches/" "org/" "Orca/" "OpenMPT.lnk" "nysic/" "notlar/" "Microsoft Edge.lnk" "Empires2.lnk" "Dropbox.lnk" "dotnet/" "desktop.ini" "assets/" "AOCCONFIG.lnk" "ALL/" "Age2.lnk" "../" "./")
-
- ("c:/Users/emin/" (23829 3365 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{d314871f-7bf0-11e9-afeb-7427ea8e2deb}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "lmms/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Belgelerim/" "Application Data/" "AppData/" "3D Objects/" ".vscode/" ".templateengine/" ".sqltools-setup" ".omnisharp/" ".nuget/" ".lmmsrc.xml" ".gitconfig" ".dotnet/" ".dbus-keyrings/" ".config/" ".cache/" ".angular-config.json" "../" "./")
-
- ("c:/Users/emin/Documents/" (23847 19711 0 0) "WindowsPowerShell/" "Visual Studio 2019/" "Videolarım/" "Resimlerim/" "Rack/" "ORG/" "Müziğim/" "My Web Sites/" "IISExpress/" "Helm/" "emacs/" "desktop.ini" "cmder_mini/" "Audacity/" "../" "./")
 
  ("c:/Users/emin/Documents/emacs/.emacs.d/auto-save-list/" (23872 32229 0 0) ".saves-8780-DESKTOP-4VL94D8~" ".saves-72-DESKTOP-4VL94D8~" ".saves-1032-DESKTOP-4VL94D8~" "../" "./")
 

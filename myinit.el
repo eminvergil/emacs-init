@@ -230,3 +230,7 @@
 ;;  
 ;;  (use-package tex
 ;;      :ensure auctex)
+
+(use-package ox-hugo
+  :ensure t            ;Auto-install the package from Melpa (optional)
+  )
